@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>轮播图</title>
+</head>
+<body>
+  <h1>上传轮播图</h1>
+  <div>
+    <input type="text" placeholder="轮播图超链接" id="href" />
+  </div>
+  <div>
+    <input type="text" placeholder="提示" id="alt" />
+  </div>
+  <div>
+    <input type="file" id="bannerimg" onchange="selectImg()"/>
+  </div>
+  <img src="" id="img" alt="">
+  <div>
+    <button onclick="uploadBanner()">提交</button>
+  </div>
+</body>
+<script src="/jquery.min.js"></script>
+<script>
+  let url = ''
+  function selectImg () {
+    // 获取文件的信息，预览图片
+    const bannerimg = document.querySelector('#bannerimg');
+    const img = document.getElementById('img')
+    // input text   可读可写  --- value
+    // input file   可读     --- files
+    // console.log(bannerimg.files[0])
+    const file = bannerimg.files[0]
+    const reader = new FileReader() // 文件读取的一个对象
+    reader.readAsDataURL(file) // 读取文件为 地址
+    // 异步操作
+    reader.onload = function () {
+      // console.log(this.result)
+      url = this.result
+      img.src = this.result
+    }
+  }
+  function uploadBanner () {
+    // 调用接口 上传图片
+    const href = document.getElementById('href').value
+    const alt = document.getElementById('alt').value
+    $.ajax({
+      url: '/banner/addAction', // 请求的地址
+      type: 'post',  // 请求方式
+      data: { href, alt, bannerimg: url }, 
+      success: (data) => {
+        if (data === 'success') {
+          window.history.back()
+        }
+      }
+    })
+  }
+</script>
+</html>

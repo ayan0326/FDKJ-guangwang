@@ -1,0 +1,466 @@
+#section0 {
+    background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+    background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+    background: linear-gradient(#ccc, #333333e3);
+}
+
+/* common */
+h1 {
+    font-size: 5em;
+    font-family: arial, helvetica;
+    color: #fff !important;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: arial, helvetica;
+    color: #fff !important;
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    color: #000 !important;
+    font-weight: 300 !important;
+}
+
+h4 {
+    font-size: 1em;
+    font-family: arial, helvetica;
+    color: #fff !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* menu */
+#header {
+    /* display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    padding: 0;
+    margin: 0;
+    z-index: 70; */
+    position: fixed;
+    top: 1.25rem;
+    width: 100%;
+    height: 3.75rem;
+    z-index: 99999;
+}
+
+.logo {
+    float: left;
+    width: 9.25rem;
+    text-align: center;
+    font-size: 40px;
+}
+
+.menus {
+    float: right;
+    margin-right: 8.125rem;
+}
+
+.menus li {
+    display: inline-block;
+    margin: 0 .9375rem;
+    /* -webkit-border-radius: 10px;
+    border-radius: 10px; */
+}
+
+/* 鼠标划过样式 */
+.menus li:hover {
+    border-bottom: 1px solid #333;
+    color: #000;
+}
+
+.menus a {
+    color: #fff;
+    padding: .375rem;
+    display: block;
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+
+.language {
+    position: absolute;
+    right: 3.125rem;
+    top: .5rem;
+}
+
+/* content0 */
+/* #section0 {
+    background: url(../images/zhuye.jpeg); */
+}
+
+#content {
+    width: 100%;
+}
+
+.content p {
+    font-size: 40px;
+    color: #fff;
+}
+
+.area-box {
+    font-size: 2em;
+    font-family: arial, helvetica;
+    color: #fff;
+    margin: 0 .5125rem;
+    padding: 0;
+}
+
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.delayone {
+    animation-delay: .3s;
+}
+
+.delaytwo {
+    animation-delay: .5s;
+}
+
+.glyphicon-menu-down {
+    position: fixed;
+    z-index: 99999;
+    left: 50%;
+    bottom: 30px;
+    width: 34px;
+    height: 34px;
+    margin-left: -17px;
+    background: url(../images/icon-arrow.png) no-repeat 50% 50%;
+    background-size: 20px auto;
+    -webkit-animation: arrowdou .5s infinite linear;
+    -moz-animation: arrowdou .5s infinite linear;
+    -o-animation: arrowdou .5s infinite linear;
+    animation: arrowdou .5s infinite linear;
+}
+
+/* 第二部分 */
+#slide1 {
+    background: url(../images/money.jpeg);
+}
+
+#slide2 {
+    background: url(../images/money2.jpeg);
+}
+
+#slide3 {
+    background: url(../images/money3.jpeg);
+}
+
+/* 第三部分 */
+#section1 {
+    /* background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+    background: -webkit-linear-gradient(#4BBFC3, #7BAABE); */
+    /* background: linear-gradient(hsl(41, 30%, 76%)); */
+    background: rgb(204, 204, 204);
+}
+
+#section1 .title {
+    margin-bottom: 35px;
+    font-size: 30px;
+    font-size: 300;
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.msg-content {
+    font-size: 15px;
+    border: 1px solid #7baabe;
+    border-radius: 8px;
+    margin: 1% 1%;
+}
+
+.content-box p {
+    margin: 1.25rem;
+    font-size: 12px;
+    color: #000;
+}
+
+/* 第四部分 */
+.anim-opacity2 {
+    font-size: 50px;
+    animation: 3s opacity2 2s infinite;
+    -webkit-animation: 3s opacity2 2s infinite;
+    -moz-animation: 3s opacity2 2s infinite;
+}
+
+@keyframes opacity2 {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes opacity2 {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes opacity2 {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* 5 */
+#section4 {
+    background: #d1bada;
+}
+.footer-connact {
+    display: flex;
+    padding: .625rem;
+}
+
+.footer-connact .wx {
+    width: 26.75rem;
+    height: 26.75rem;
+    margin: 1px 6.25rem 0 8rem;
+}
+
+.wx p {
+    font-size: 14px;
+    margin-bottom: 2.25rem;
+}
+
+.wx img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    margin-left: 10%;
+}
+
+.footer li {
+    margin: 1.625rem 2.25rem;
+}
+
+.footer-number {
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+
+/* 6 */
+.box {
+    max-width: 500px;
+    margin: 0 10%;
+}
+
+.box ul li {
+    text-align: center;
+    width: 100%;
+    /*height:30px;
+            line-height: 30px;*/
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin: 2% 0;
+}
+
+.box ul li a span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.box ul li .boxChild {
+    /*display: none;*/
+    height: 0px
+}
+
+.box ul li .boxChild ul li {
+    padding-left: 50px;
+    font-size: 14px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.box ul li .active {
+    transition: all 1s;
+}
+
+.alldata {
+    display: flex;
+}
+
+.test {
+    width: 100%;
+    padding: 10px;
+    height: 1000px;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+}
+
+.inner {
+    display: inline-block;
+    width: 100%;
+    word-wrap: normal;
+    padding: 1.25rem;
+    border: 1px solid gainsboro;
+    text-align: left;
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-radius: 8px;
+}
+
+.inner:hover {
+    border: 1px solid deeppink;
+}
+
+.inner:hover h3 {
+    color: deeppink;
+}
+
+.inner img {
+    width: 200px;
+    height: 200px;
+    font-size: 0;
+}
+
+h3,
+span {
+    font-size: 20px;
+}
+
+/* donghua */
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+@-webkit-keyframes statetop {
+    0% {
+        background-position: 0% 0%;
+
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@-moz-keyframes statetop {
+    0% {
+        background-position: 0% 0%;
+
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@-o-keyframes statetop {
+    0% {
+        background-position: 0% 0%;
+
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes statetop {
+    0% {
+        background-position: 0% 0%;
+
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+.boxA {
+    position: absolute;
+    bottom: 15%;
+    left: 38%;
+    width: 28.75rem;
+    /*宽高尺寸任意增减*/
+    height: 100px;
+    background: url(../images//jlt.jpeg) no-repeat;
+    background-size: 400% 100%;
+    /*这项是关键，用来撑开拼凑起来的序列帧，一行4帧图就是400%*/
+    -webkit-animation: bird-slow .5s steps(3) infinite;
+    /*发生了3次位移steps就是3*/
+    animation: bird-slow .5s steps(3) infinite;
+}
+
+@keyframes bird-slow {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 99% 0%;
+        /*整张图是100%，3次位移每一次是33%，第三次就是99%*/
+    }
+}
+
+@-webkit-keyframes bird-slow {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 99% 0%;
+    }
+}
