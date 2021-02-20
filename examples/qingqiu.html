@@ -23,6 +23,7 @@
 </body>
 <script src="/jquery.min.js"></script>
 <script>
+  // ajax请求
   let url = ''
   function selectImg () {
     // 获取文件的信息，预览图片
@@ -48,7 +49,7 @@
     $.ajax({
       url: '/banner/addAction', // 请求的地址
       type: 'post',  // 请求方式
-      data: { href, alt, bannerimg: url }, 
+      data: { href, alt, bannerimg: url },
       success: (data) => {
         if (data === 'success') {
           window.history.back()

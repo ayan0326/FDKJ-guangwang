@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>慢雾科技(SlowMist) - 专注区块链生态安全</title>
+    <meta name="keywords" content="慢雾科技,SlowMist,厦门慢雾科技,厦门慢雾科技有限公司,专注区块链生态安全,区块链,交易所安全审计,钱包安全审计,链安全审计,智能合约安全审计,防御部署,威胁情报,恶意钱包地址库,安全顾问,区块链安全">
+    <meta name="description"
+          content="厦门慢雾科技有限公司，专注区块链生态安全，总部位于厦门，由一支拥有十多年一线网络安全攻防实战的团队创建，团队成员曾打造了拥有世界级影响力的安全工程。自 2018 年 1 月成立至今，致力于成为全球领先且专注于区块链生态的安全公司，慢雾科技已经为全球多家领先的数字货币交易所、钱包、底层公链、智能合约等项目做了安全审计及防御部署。慢雾科技的安全解决方案包括：安全审计、安全顾问、防御部署、威胁情报(BTI)、漏洞赏金等服务并配套相关安全产品。在行业内曾独立发现并公布多起通用高风险的安全漏洞，得到业界的广泛关注与认可。除了研究全球知名公链如比特币、门罗币、以太坊、EOS、Cosmos、本体、唯链等，慢雾科技还特别深耕以太坊和 EOS 生态，围绕 DApp 安全攻防对抗，安全审计与防御的知名智能合约数百份。给区块链生态带来安全感是慢雾科技努力的方向。">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="https://www.slowmist.com/images/favicon.ico">
+    <link rel="stylesheet" href="https://www.slowmist.com/css/swiper-3.4.0.min.css">
+    <link rel="stylesheet" href="https://www.slowmist.com/css/animate.css">
+    <link rel="stylesheet" href="https://www.slowmist.com/css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/sm-v5.css">
+    <script type="text/javascript">
+        // 适配微信JS-SDK
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var isWeixinBrowser = (/micromessenger/i).test(navigator.userAgent);
+            if( isWeixinBrowser && (window.location.search || window.location.pathname != '/index.html') ) window.location.href = '/index.html' + window.location.hash;
+        });
+    </script>
+
+<!--    <script>-->
+<!--        //获取浏览器页面可见高度和宽度-->
+<!--        var _PageHeight = document.documentElement.clientHeight,-->
+<!--            _PageWidth = document.documentElement.clientWidth;-->
+<!--        //计算loading框距离顶部和左部的距离（loading框的宽度为215px，高度为61px）-->
+<!--        var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0,-->
+<!--            _LoadingLeft = _PageWidth > 215 ? (_PageWidth - 215) / 2 : 0;-->
+<!--        //在页面未加载完毕之前显示的loading Html自定义内容-->
+<!--        var _LoadingHtml = '<div id="loadingDiv" style="position:absolute;left:0;width:100%;height:' + _PageHeight + 'px;top:0;background:#f3f8ff;opacity:1;filter:alpha(opacity=80);z-index:10000;"><div style="position: absolute; cursor1: wait; left: ' + _LoadingLeft + 'px; top:' + _LoadingTop + 'px; width: auto; height: 57px; line-height: 57px; padding-left: 50px; padding-right: 5px; background: #fff url(Image/loading.gif) no-repeat scroll 5px 10px; border: 2px solid #95B8E7; color: #696969; font-family:\'Microsoft YaHei\';">页面加载中，请等待...</div></div>';-->
+<!--        //呈现loading效果-->
+<!--        document.write(_LoadingHtml);-->
+
+<!--        //window.onload = function () {-->
+<!--        //    var loadingMask = document.getElementById('loadingDiv');-->
+<!--        //    loadingMask.parentNode.removeChild(loadingMask);-->
+<!--        //};-->
+
+<!--        //监听加载状态改变-->
+<!--        document.onreadystatechange = completeLoading;-->
+
+<!--        //加载状态为complete时移除loading效果-->
+<!--        function completeLoading() {-->
+<!--            if (document.readyState == "complete") {-->
+<!--                var loadingMask = document.getElementById('loadingDiv');-->
+<!--                loadingMask.parentNode.removeChild(loadingMask);-->
+<!--            }-->
+<!--        }-->
+<!--    </script>-->
+
+  <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false"}]);</script>
+                          <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="BRHCK-WF8UJ-VQPH8-PV2VQ-6B3CH",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"BRHCK-WF8UJ-VQPH8-PV2VQ-6B3CH",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="otwdlxtt45p4syaq3moa-f-99abd19fd-clientnsv4-s.akamaihd.net",i={"ak.v":"30","ak.cp":"1087597","ak.ai":parseInt("646691",10),"ak.ol":"0","ak.cr":51,"ak.ipv":4,"ak.proto":"h2","ak.rid":"22ec300","ak.r":29243,"ak.a2":e,"ak.m":"co","ak.n":"ff","ak.bpcip":"116.236.53.0","ak.cport":55888,"ak.gh":"115.231.95.197","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1611717404","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==KylspCcjRc00plotiwVjEpCgXRXwUDMTanHEQu9gSF0pe1w47miC9f8TV1cvExPwwOmsiovey22Tx5px6Xfvg52XjwAuSFerJD69Wwnc+CDnjB5h99yH4tyD6DujAtFk3MN4KqXOtjWf2oB0/vuhy/14Cr9Wfg2dAN1hGCRkitxlYtkwoQQ7Q8t1jm56oE96XeJVU1iysd/Nn6Y6dnMvrg+YnekN3rofoMH2j3JQZL8xSFJYTzhgcprqVcOCsO0DsDcPo8s3o7t5tWNoiMTZanvS33jCQI/mat1kawu+hLtYMdq3sxn/SYmNV969QCd8J4YdhQt0tepflUEAYc7XGxmLwy1wCAMTqkRhpBcVOhRMWW6NoEXBfoFSOWLLsoWYXpIahbuRWSNWyNVKh27+oTfFkd+av5kBdp8SrFOMp3I=","ak.pv":"8","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var _={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))i["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:n,init:function(){if(!_.i){var a=BOOMR.subscribe;a("before_beacon",_.av,null,null),a("onbeacon",_.rv,null,null),_.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body class="index">
+<div class="header animated fadeInDown">
+    <div class="logo"><a href="index.html"></a></div>
+<!--    <div class="year-logo"><img src="images/h-chun.png?v=1.8"></div>-->
+    <div id="menu" class="clearfix">
+        <ul class="clearfix">
+            <li data-menuanchor="home" class="active"><a href="#home">首页</a></li>
+            <li data-menuanchor="service"><a href="#service">服务<i class="icon-hot"></i></a></li>
+            <li data-menuanchor="product"><a href="#product">产品</a></li>
+            <li data-menuanchor="news"><a href="#news">动态</a></li>
+            <li data-menuanchor="aboutUs"><a href="#aboutUs">关于</a></li>
+            <li data-menuanchor="contactUs"><a href="#contactUs">联系</a></li>
+            <li data-menuanchor="customer"><a href="#customer">客户</a></li>
+        </ul>
+        <p class="link-github"><a href="https://github.com/slowmist" rel="nofollow" target="_blank"><i></i>GitHub</a> | <a href="https://slowmist.io/" rel="nofollow" target="_blank">慢雾区</a></p>
+    </div>
+    <div class="language"><a href="javascript:;" class="btn-language">EN<i></i></a></div>
+    <div class="language-box">
+        <i></i>
+        <ul>
+            <li><a href="javascript:L.switch('en');">EN</a></li>
+            <li><a href="javascript:L.switch('zh');">CN</a></li>
+            <li><a href="javascript:L.switch('jp');">JP</a></li>
+            <li><a href="javascript:L.switch('kr');">KR</a></li>
+        </ul>
+    </div>
+</div>
+<div id="fullpage">
+    <div class="section" id="section0">
+        <div class="fp-bg">
+            <div data-relative-input="true" id="scene" class="scene"
+                 data-friction-x="0.1"
+                 data-friction-y="0.1"
+                 data-scalar-x="25"
+                 data-scalar-y="15">
+                <div class="layer" data-depth="0.00"></div>
+                <div class="layer" data-depth="0.10"><div class="background"></div></div>
+                <div class="layer" data-depth="0.15"><div class="ob1"><img src="https://www.slowmist.com/images/clouds.png"></div></div>
+                <div class="layer" data-depth="0.20"><div class="ob2"><img src="https://www.slowmist.com/images/clouds.png"></div></div>
+                <div class="layer" data-depth="0.20"><div class="ob3"><img src="https://www.slowmist.com/images/clouds.png"></div></div>
+            </div>
+        </div>
+        <div class="cloud"><img src="https://www.slowmist.com/images/clouds.png"></div>
+        <h2 class="animated fadeInUp">专注区块链生态安全</h2>
+        <p class="a-delay1 animated fadeInUp">慢而有为，雾释冰融</p>
+        <h3 class="a-delay2 animated fadeInUp">慢雾已提供的安全防御</h3>
+        <ul class="a-delay2 animated fadeInUp">
+            <li><a href="service-exchange-security-audit.html"><span>70+</span><p>交易所</p></a></li>
+            <li><a href="service-wallet-security-audit.html"><span>110+</span><p>钱包</p></a></li>
+            <li><a href="service-blockchain-security-audit.html"><span>40+</span><p>公链</p></a></li>
+            <li><a href="service-smart-contract-security-audit.html"><span>800+</span><p>智能合约</p></a></li>
+        </ul>
+        <a href="#service" class="icon-arrow"></a>
+    </div>
+    <div class="section" id="section1">
+        <div class="fp-bg"></div>
+        <div class="tit services-tit a-delay1 animated fadeInUp">君之所想 吾之所为</div>
+        <div class="services-tit-subtitle a-delay1 animated fadeInUp">从 "威胁发现" 到 "威胁防御" 完整安全服务方案</div>
+        <div class="container-services-box">
+                    <div class="swiper-container" id="tabs-container-services">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <ul class="clearfix list9">
+                                    <li class="l1 animated fadeInUp">
+                                        <div class="s-content">
+                                            <a href="service-exchange-security-audit.html">
+                                                <i class="icon-services icon-services2"></i>
+                                                <h3>交易所安全审计</h3>
+                                                <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计。</p>
+                                                <div class="more"><span>详细了解</span></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="l2 animated fadeInUp">
+                                        <div class="s-content">
+                                            <a href="service-wallet-security-audit.html">
+                                                <i class="icon-services icon-services3"></i>
+                                                <h3>钱包安全审计</h3>
+                                                <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计。</p>
+                                                <div class="more"><span>详细了解</span></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="l3 animated fadeInUp">
+                                        <div class="s-content">
+                                            <a href="service-blockchain-security-audit.html">
+                                                <i class="icon-services icon-services4"></i>
+                                                <h3>链安全审计</h3>
+                                                <p>针对区块链资金安全、共识安全等关键模块进行全方位的安全审计。</p>
+                                                <div class="more"><span>详细了解</span></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="l3 animated fadeInUp">
+                                        <div class="s-content">
+                                            <a href="service-smart-contract-security-audit.html">
+                                                <i class="icon-services icon-services1"></i>
+                                                <h3>智能合约安全审计</h3>
+                                                <p>针对代币(Token)合约、DApp 合约等的源码进行全方位的白盒安全审计。</p>
+                                                <div class="more"><span>详细了解</span></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="l4 animated fadeInUp">
+                                        <div class="s-content">
+                                            <a href="service-consortium-blockchain-security-solutions.html">
+                                                <i class="icon-services icon-consortium-blockchain"></i>
+                                                <h3>联盟链安全解决方案</h3>
+                                                <p>从安全设计到安全审计再到安全监控及管理全周期进行联盟链安全保障。</p>
+                                                <div class="more"><span>详细了解</span></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="l5 animated fadeInUp">
+                                        <div class="s-content">
+                                            <a href="service-red-teaming.html">
+                                                <i class="icon-services icon-redteaming"></i>
+                                                <h3>红队测试(Red Teaming)</h3>
+                                                <p>超越渗透测试，针对人员、业务、办公等真实脆弱点进行攻击评估。</p>
+                                                <div class="more"><span>详细了解</span></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="clearfix list9">
+                                    <li class="l1 animated fadeInUp">
+                                        <div class="s-content">
+                                            <a href="service-security-monitoring.html">
+                                                <i class="icon-services icon-safety-monitoring"></i>
+                                                <h3>安全监测</h3>
+                                                <p>覆盖所有可能漏洞的动态安全监测体系，提供持续的、全方位的安全保障。</p>
+                                                <div class="more"><span>详细了解</span></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="l2 animated fadeInUp">
+                                        <div class="s-content">
+                                            <a href="https://bti.slowmist.com" target="_blank">
+                                                <i class="icon-services icon-services7"></i>
+                                                <h3>区块链威胁情报</h3>
+                                                <p>通过威胁情报整合，构建一个链上链下安全治理一体化的联合防御体系。</p>
+                                                <div class="more"><span>详细了解</span></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="l3 animated fadeInUp">
+                                        <div class="s-content">
+                                            <a href="service-bug-bounty.html">
+                                                <i class="icon-services icon-services8"></i>
+                                                <h3>漏洞赏金</h3>
+                                                <p>设定业务范围和奖励标准，引入全球白帽黑客进行持续性的漏洞挖掘。</p>
+                                                <div class="more"><span>详细了解</span></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="l3 animated fadeInUp">
+                                        <div class="s-content">
+                                            <a href="service-defense-deployment.html">
+                                                <i class="icon-services icon-services6"></i>
+                                                <h3>防御部署</h3>
+                                                <p>慢雾精选：因地制宜且体系化的防御方案、实施冷温热钱包安全加固等。</p>
+                                                <div class="more"><span>详细了解</span></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="l4 animated fadeInUp">
+                                        <div class="s-content">
+                                            <a href="service-security-consulting.html">
+                                                <i class="icon-services icon-services5"></i>
+                                                <h3>安全顾问</h3>
+                                                <p>全年性持续指导先导性安全体系建设工作，安全成为基建，防御先人一步。</p>
+                                                <div class="more"><span>详细了解</span></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="l5 animated fadeInUp">
+                                        <div class="s-content">
+                                            <a href="https://ht.slowmist.com/" target="_blank">
+                                                <i class="icon-services icon-hackingtime"></i>
+                                                <h3>Hacking Time</h3>
+                                                <p>Hacking Time 第二期 2020.12.29 - 30 区块链安全攻防峰会</p>
+                                                <div class="more"><span>详细了解</span></div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="tabs-tit-service animated fadeInUp"><a href="javascript:;" class="active">1</a><a href="javascript:;">2</a></div>
+        </div>
+        <ul class="clearfix list9 list10 ul-services-box">
+            <li class="l1 animated fadeInUp">
+                <div class="s-content">
+                    <a href="service-exchange-security-audit.html">
+                        <i class="icon-services icon-services2"></i>
+                        <h3>交易所安全审计</h3>
+                        <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计。</p>
+                        <div class="more"><span>详细了解</span></div>
+                    </a>
+                </div>
+            </li>
+            <li class="l2 animated fadeInUp">
+                <div class="s-content">
+                    <a href="service-wallet-security-audit.html">
+                        <i class="icon-services icon-services3"></i>
+                        <h3>钱包安全审计</h3>
+                        <p>超越渗透测试的私钥安全、业务安全等全方位的黑盒加灰盒安全审计。</p>
+                        <div class="more"><span>详细了解</span></div>
+                    </a>
+                </div>
+            </li>
+            <li class="l2 animated fadeInUp">
+                <div class="s-content">
+                    <a href="service-blockchain-security-audit.html">
+                        <i class="icon-services icon-services4"></i>
+                        <h3>链安全审计</h3>
+                        <p>针对区块链资金安全、共识安全等关键模块进行全方位的安全审计。</p>
+                        <div class="more"><span>详细了解</span></div>
+                    </a>
+                </div>
+            </li>
+            <li class="l2 animated fadeInUp">
+                <div class="s-content">
+                    <a href="service-smart-contract-security-audit.html">
+                        <i class="icon-services icon-services1"></i>
+                        <h3>智能合约安全审计</h3>
+                        <p>针对代币(Token)合约、DApp 合约等的源码进行全方位的白盒安全审计。</p>
+                        <div class="more"><span>详细了解</span></div>
+                    </a>
+                </div>
+            </li>
+            <li class="l3 animated fadeInUp">
+                <div class="s-content">
+                    <a href="service-consortium-blockchain-security-solutions.html">
+                        <i class="icon-services icon-consortium-blockchain"></i>
+                        <h3>联盟链安全解决方案</h3>
+                        <p>从安全设计到安全审计再到安全监控及管理全周期进行联盟链安全保障。</p>
+                        <div class="more"><span>详细了解</span></div>
+                    </a>
+                </div>
+            </li>
+            <li class="l3 animated fadeInUp">
+                <div class="s-content">
+                    <a href="service-red-teaming.html">
+                        <i class="icon-services icon-redteaming"></i>
+                        <h3>红队测试(Red Teaming)</h3>
+                        <p>超越渗透测试，针对人员、业务、办公等真实脆弱点进行攻击评估。</p>
+                        <div class="more"><span>详细了解</span></div>
+                    </a>
+                </div>
+            </li>
+            <li class="l3 animated fadeInUp">
+                <div class="s-content">
+                    <a href="service-security-monitoring.html">
+                        <i class="icon-services icon-safety-monitoring"></i>
+                        <h3>安全监测</h3>
+                        <p>覆盖所有可能漏洞的动态安全监测体系，提供持续的、全方位的安全保障。</p>
+                        <div class="more"><span>详细了解</span></div>
+                    </a>
+                </div>
+            </li>
+            <li class="l4 animated fadeInUp">
+                <div class="s-content">
+                    <a href="https://bti.slowmist.com" target="_blank">
+                        <i class="icon-services icon-services7"></i>
+                        <h3>区块链威胁情报</h3>
+                        <p>通过威胁情报整合，构建一个链上链下安全治理一体化的联合防御体系。</p>
+                        <div class="more"><span>详细了解</span></div>
+                    </a>
+                </div>
+            </li>
+            <li class="l4 animated fadeInUp">
+                <div class="s-content">
+                    <a href="service-bug-bounty.html">
+                        <i class="icon-services icon-services8"></i>
+                        <h3>漏洞赏金</h3>
+                        <p>设定业务范围和奖励标准，引入全球白帽黑客进行持续性的漏洞挖掘。</p>
+                        <div class="more"><span>详细了解</span></div>
+                    </a>
+                </div>
+            </li>
+            <li class="l5 animated fadeInUp">
+                <div class="s-content">
+                    <a href="service-defense-deployment.html">
+                        <i class="icon-services icon-services6"></i>
+                        <h3>防御部署</h3>
+                        <p>慢雾精选：因地制宜且体系化的防御方案、实施冷温热钱包安全加固等。</p>
+                        <div class="more"><span>详细了解</span></div>
+                    </a>
+                </div>
+            </li>
+            <li class="l5 animated fadeInUp">
+                <div class="s-content">
+                    <a href="service-security-consulting.html">
+                        <i class="icon-services icon-services5"></i>
+                        <h3>安全顾问</h3>
+                        <p>全年性持续指导先导性安全体系建设工作，安全成为基建，防御先人一步。</p>
+                        <div class="more"><span>详细了解</span></div>
+                    </a>
+                </div>
+            </li>
+            <li class="l5 animated fadeInUp">
+                <div class="s-content">
+                    <a href="https://ht.slowmist.com/" target="_blank">
+                        <i class="icon-services icon-hackingtime"></i>
+                        <h3>Hacking Time</h3>
+                        <p>Hacking Time 第二期 2020.12.29 - 30 区块链安全攻防峰会</p>
+                        <div class="more"><span>详细了解</span></div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="section" id="section2">
+        <div class="fp-bg"></div>
+        <div class="product-box">
+
+            <div class="tit services-tit a-delay1 animated fadeInUp">君之所忧 吾之所甚忧</div>
+            <div class="services-tit-subtitle a-delay1 animated fadeInUp">解决核心安全问题的产品才是我们要创造的</div>
+            <div class="tabs-tit-product clearfix"><a href="javascript:;" class="active">最新产品</a><a href="javascript:;">商业型产品</a><a href="javascript:;">社区类产品</a><a href="javascript:;">其他产品</a></div>
+            <div class="swiper-container" id="tabs-product">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <ul class="clearfix">
+                            <li class="l1 animated fadeInUp">
+                                <a href="https://www.slowmist.io/#staking" target="_blank">
+                                    <img src="https://www.slowmist.com/images/project18.png">
+                                    <h3>慢雾 Safe Staking</h3>
+                                    <p>观测公链运行状态，即时监测安全异常</p>
+                                </a>
+                            </li>
+                            <li class="l2 animated fadeInUp">
+                                <a href="https://aml.slowmist.com/" target="_blank">
+                                    <img src="https://www.slowmist.com/images/project14.png">
+                                    <h3>慢雾 AML</h3>
+                                    <p>阻拦洗币，规避风险</p>
+                                </a>
+                            </li>
+                            <li class="l3 animated fadeInUp">
+                                <a href="mailto:team@slowmist.com">
+                                    <img src="https://www.slowmist.com/images/project15.png">
+                                    <h3>假充值漏洞扫描器</h3>
+                                    <p>一款让交易所安全充提的保障利器</p>
+                                </a>
+                            </li>
+                            <li class="l3 animated fadeInUp">
+                                <a href="https://hacked.slowmist.io/" target="_blank">
+                                    <img src="https://www.slowmist.com/images/project13.png">
+                                    <h3>被黑档案库</h3>
+                                    <p>区块链攻击事件一网打尽</p>
+                                </a>
+                            </li>
+                            <li class="l4 animated fadeInUp">
+                                <a href="https://firewallx.io/" target="_blank">
+                                    <img src="https://www.slowmist.com/images/project12.png">
+                                    <h3>FireWall.X</h3>
+                                    <p>强大的 EOS 智能合约防火墙</p>
+                                </a>
+                            </li>
+                            <li class="l5 animated fadeInUp">
+                                <a href="https://eos.slowmist.io/" target="_blank">
+                                    <img src="https://www.slowmist.com/images/project10.png">
+                                    <h3>EOS 天眼</h3>
+                                    <p>洞悉 EOS 合约的一切</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="https://aml.slowmist.com/" target="_blank">
+                                    <img src="https://www.slowmist.com/images/project14.png">
+                                    <h3>慢雾 AML</h3>
+                                    <p>阻拦洗币，规避风险</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:team@slowmist.com">
+                                    <img src="https://www.slowmist.com/images/project15.png">
+                                    <h3>假充值漏洞扫描器</h3>
+                                    <p>一款让交易所安全充提的保障利器</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:team@slowmist.com">
+                                    <img src="https://www.slowmist.com/images/project5.png">
+                                    <h3>热钱包安全网关</h3>
+                                    <p>"热钱包避风港"，一键部署安全防护引擎</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="https://www.slowmist.io/#staking" target="_blank">
+                                    <img src="https://www.slowmist.com/images/project18.png">
+                                    <h3>慢雾 Safe Staking</h3>
+                                    <p>观测公链运行状态，即时监测安全异常</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://hacked.slowmist.io/" target="_blank">
+                                    <img src="https://www.slowmist.com/images/project13.png">
+                                    <h3>被黑档案库</h3>
+                                    <p>区块链攻击事件一网打尽</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://firewallx.io/" target="_blank">
+                                    <img src="https://www.slowmist.com/images/project12.png">
+                                    <h3>FireWall.X</h3>
+                                    <p>强大的 EOS 智能合约防火墙</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://eos.slowmist.io/" target="_blank">
+                                    <img src="https://www.slowmist.com/images/project10.png">
+                                    <h3>EOS 天眼</h3>
+                                    <p>洞悉 EOS 合约的一切</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/slowmist/blockchain-threat-intelligence/" target="_blank">
+                                    <img src="https://www.slowmist.com/images/project3.png">
+                                    <h3>区块链蜜罐网络</h3>
+                                    <p>获取第一手区块链安全情报</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="https://slowmist.io/awesome-blockchain-bug-bounty/" target="_blank">
+                                    <img src="https://www.slowmist.com/images/project9.png">
+                                    <h3>区块链漏洞赏金导航</h3>
+                                    <p>最全的区块链漏洞赏金导航</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.slowmist.com/service-smart-contract-security-audit.html" target="_blank">
+                                    <img src="https://www.slowmist.com/images/project16.png">
+                                    <h3>智能合约安全审计查询</h3>
+                                    <p>查询慢雾的合约安全审计报告</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://1337.slowmist.io/" target="_blank">
+                                    <img src="https://www.slowmist.com/images/project17.png">
+                                    <h3>慢雾周边</h3>
+                                    <p>慢雾文化产品</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section" id="section3">
+        <div class="fp-bg"></div>
+        <div class="news-zt animated fadeInUp">
+            <div class="swiper-container swiper-zxkz">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="https://ht.slowmist.com/" target="_blank"><img src="images/news-zt7.jpg"></a></div>
+                    <div class="swiper-slide"><a href="https://bti.slowmist.com" target="_blank"><img src="https://www.slowmist.com/images/news-zt5.jpg"></a></div>
+                    <div class="swiper-slide"><a href="https://firewallx.io/" target="_blank"><img src="https://www.slowmist.com/images/news-zt4.jpg"></a></div>
+                    <div class="swiper-slide"><a href="https://4294967296.io/eth214/" target="_blank"><img src="https://www.slowmist.com/images/news-zt1.png"></a></div>
+                </div>
+                <div class="swiper-button-next"><i class="fa fa-angle-right"></i></div>
+                <div class="swiper-button-prev"><i class="fa fa-angle-left"></i></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="news-zx animated fadeInUp a-delay1">
+                <div class="tabs-tit clearfix"><a href="javascript:;" class="active">公司新闻</a><a href="javascript:;">漏洞披露</a><a href="javascript:;">技术研究</a></div>
+                <div class="swiper-container" id="tabs-container-zx">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="news-list clearfix" id="news-company">
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="news-list clearfix" id="news-bug">
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="news-list clearfix" id="news-tech">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="news.html" class="btn-more">查看更多动态</a>
+        </div>
+    </div>
+    <div class="section" id="section4">
+        <div class="fp-bg"></div>
+        <div class="tit a-delay1 animated fadeInUp">了解我们 知己知彼</div>
+        <div class="about-con">
+            <p class="a-delay2 animated fadeInUp">
+                慢雾科技是一家专注区块链生态安全的公司，成立于 2018 年 1 月，总部位于厦门，由一支拥有十多年一线网络安全攻防实战的团队创建，团队成员曾打造了拥有世界级影响力的安全工程。慢雾科技已经是国际化的区块链安全头部公司，主要通过“威胁发现到威胁防御一体化因地制宜的安全解决方案”服务了全球许多头部或知名的项目，包括：加密货币交易所（如：火币、OKEx、币安等）、加密货币钱包（如：imToken、RenrenBit、MYKEY 等）、智能合约（如：TrueUSD、HUSD、OKUSD 等）、DeFi 项目（如：1inch、BlackHoleSwap、JUST 等）、底层公链（如：EOS、OKExChain、PlatON 等），已有商业客户近千家，客户分布在十几个主要国家与地区。
+                <a href="about-us.html" style="color: #fff; text-decoration: underline; font-weight: bold;">更多 ></a>
+            </p>
+            <ul class="clearfix">
+                <li class="a-delay3 animated fadeInLeft">
+                    <a href="culture.html">
+                        <img src="https://www.slowmist.com/images/team-i3.png">
+                        <h3>文化</h3>
+                    </a>
+                </li>
+                <li class="a-delay2 animated fadeInLeft">
+                    <a href="honor.html">
+                        <img src="https://www.slowmist.com/images/team-i4.png">
+                        <h3>荣誉</h3>
+                    </a>
+                </li>
+                <li class="a-delay3 animated fadeInRight">
+                    <a href="history.html">
+                        <img src="https://www.slowmist.com/images/team-i5.png">
+                        <h3>历程</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section" id="section5">
+        <div class="fp-bg"></div>
+        <div class="tit a-delay1 animated fadeInUp">联系我们 拥有安全</div>
+        <div class="contact-con">
+            <ul class="clearfix">
+                <li class="a-delay2 animated fadeInLeft">
+                    <h3><i class="icon-wx"></i>微信公众号</h3>
+                    <img src="https://www.slowmist.com/images/gzh.png">
+                    <p>微信号:SlowMist</p>
+                </li>
+                <li class="a-delay2 animated fadeInUp">
+                    <h3><i class="icon-zsxq"></i>知识星球</h3>
+                    <img src="https://www.slowmist.com/images/ewmxq.png">
+                    <p><a href="https://t.zsxq.com/Q3zNvvF" target="_blank">慢雾区 ID:88474061</a></p>
+                </li>
+                <li class="a-delay2 animated fadeInRight">
+                    <h3><i class="icon-wb"></i>微博</h3>
+                    <img src="https://www.slowmist.com/images/wbewm.png">
+                    <p><a href="https://weibo.com/slowmist" target="_blank">@慢雾科技</a></p>
+                </li>
+            </ul>
+            <p class="a-delay3 email-sm email-contact animated fadeInUp"><a href="contact-us.html"><i></i>联系我们</a></p>
+        </div>
+    </div>
+    <div class="section" id="section6">
+        <div class="fp-bg"></div>
+        <div class="tit a-delay1 animated fadeInUp">部分客户案例</div>
+        <div class="partner-con">
+
+            <div class="swiper-container swiper-customer">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <ul>
+                            <li class="a-delay1 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-huobi.png"></p></li>
+                            <li class="a-delay1 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-okex.png"></p></li>
+                            <li class="a-delay1 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-binance.png"></p></li>
+                            <li class="a-delay1 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-imtokenlogo.png"></p></li>
+                            <li class="a-delay1 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-more.png"></p></li>
+                            <li class="a-delay1 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-ontology.png"></p></li>
+                            <li class="a-delay1 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-v.png"></p></li>
+                            <li class="a-delay1 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-topone.png"></p></li>
+                            <li class="a-delay1 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-yoyow.png"></p></li>
+                            <li class="a-delay1 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-r.png"></p></li>
+                            <li class="a-delay2 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-meetone.png"></p></li>
+                            <li class="a-delay2 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-box.png"></p></li>
+                            <li class="a-delay2 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-wancloud.png"></p></li>
+                            <li class="a-delay2 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-foglink.png"></p></li>
+                            <li class="a-delay2 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-mixin.png"></p></li>
+                            <li class="a-delay2 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-mytoken.png"></p></li>
+                            <li class="a-delay2 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-hoo.png"></p></li>
+                            <li class="a-delay2 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-hashgard.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-dba.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-bitportal.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-primas.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-coinegg.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-renrenbit.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-wormhole.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-bixin.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-fibos.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-abcc.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-trueusd.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-atn.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-hitchain.png"></p></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-oneroot.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-seele.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-smartmesh.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-winchain.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-whaleex.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-oceanex.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-cybavo.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-hashquark.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-bybit.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-morecoin.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-buckwallet.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-boscore.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-mykey.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-bigone.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-coinsuper.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-mxc.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-btcmex.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-matrix.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-fex.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-spark-pool.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-bit-z.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-bitmart.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-abcwallet.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-tok.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-bkex.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-bluehelixgroup.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-platon.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-iotex.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-quarkchain.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-bhd.png"></p></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-dero.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-cocosbcx.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-gst.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-newton.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-bar.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-palletone.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-maxonrow.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-ddam.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-bigbang.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-hyperpay.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-coinw.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-phemex.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-btcbox.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-bitforex.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-sea.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-eosio.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-stcoins.png"></p></li>
+                            <!-- <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-okchain.png"></p></li> -->
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-hbtc.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-usdk.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-dforce.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-just.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-bingbon.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-anyswap.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-defibox.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-fortube.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-oneswap.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-dmd.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-pearl.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-btswap.png"></p></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-gxchain.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-sun.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-acala.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-blackholeswap.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-defisnetwork.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-justswap.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-crypto.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-huobichain.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-okexchain.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-chainx.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-unifi.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-coral.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-aelf1.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-defichain.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-waykichain.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-1inch.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-huobiecochain.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-eosnation.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-hathor.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-zkswap.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-bitgo.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-dfuture.png"></p></li>
+                            <li class="a-delay3 animated fadeInUp"><p><img src="https://www.slowmist.com/images/p-linear.png"></p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer a-delay1 animated fadeInUp">
+    <div class="statement a-delay1 animated fadeInUp"><p class="statement-scroll clearfix"><span>【官方声明】厦门慢雾科技有限公司作为区块链生态中的第三方独立安全公司，专注区块链生态安全，不为任何项目背书或站台。一切打着厦门慢雾科技有限公司背书或站台旗号的项目，都不是厦门慢雾科技有限公司官方授权，我们将保留法律追究的权利！</span></p></div>
+    <p>Copyright © 2018 SlowMist, Inc. All Rights Reserved. <span><a href="http://www.beian.miit.gov.cn/" target="_blank">闽ICP备18006755号</a> <img src="https://www.slowmist.com/images/ga.png"> <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35020302032841" target="_blank">闽公网安备35020302032841号</a></span></p></div>
+
+
+<script src="https://www.slowmist.com/js/jquery-2.2.3.min.js" type="text/javascript"></script>
+<script src="https://www.slowmist.com/js/jquery.parallax.js" type="text/javascript"></script>
+<script src="https://www.slowmist.com/js/jquery.fullPage.js" type="text/javascript"></script>
+<script src="https://www.slowmist.com/js/swiper-3.4.0.jquery.min.js" type="text/javascript"></script>
+<script src="https://www.slowmist.com/js/vivus.min.js" type="text/javascript"></script>
+<script src="https://www.slowmist.com/js/sm.js" type="text/javascript"></script>
+<script src="js/language.js" type="text/javascript"></script>
+<script type="text/javascript">
+    L.init();
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+            anchors: ['home', 'service', 'product', 'news', 'aboutUs', 'contactUs', 'customer'],
+            navigation: true,
+            navigationPosition: 'right',
+            menu: '#menu',
+
+
+            afterLoad: function (anchorLink, index) {
+                var loadedSection = $(this);
+
+                if (anchorLink == 'home' || anchorLink == 'customer' || anchorLink == 'aboutUs') {
+                    $(".header").removeClass("top");
+                    $("#fp-nav").removeClass("black")
+                } else {
+                    $(".header").addClass("top");
+                    $("#fp-nav").addClass("black")
+                }
+
+                if (index == 1) {
+                    $("#section0 .animated").css("display","block");
+                    $(".icon-arrow").css("display","block");
+
+                    // jQuery Selections
+                    var $scene = $('#scene');
+                    // Resize handler.
+                    (resize = function() {
+                        $scene[0].style.width = window.innerWidth + 'px';
+                        $scene[0].style.height = window.innerHeight + 'px';
+
+                    })();
+                    // Pretty simple huh?
+                    $scene.parallax();
+                } else {
+                    $("#section0 .animated").css("display","none");
+                    $(".icon-arrow").css("display","none");
+                }
+
+
+                if (index == 2) {
+                    $("#section1 .animated").css("display","block");
+
+                    var servicesSwiper = new Swiper('#tabs-container-services', {
+                        autoHeight: true,
+                        speed:500,
+                        onSlideChangeStart: function(){
+                            $(".tabs-tit-service .active").removeClass('active')
+                            $(".tabs-tit-service a").eq(servicesSwiper.activeIndex).addClass('active')
+                        }
+                    });
+                    $(".tabs-tit-service a").on('touchstart mousedown',function(e){
+                        e.preventDefault()
+                        $(".tabs-tit-service .active").removeClass('active')
+                        $(this).addClass('active')
+                        servicesSwiper.slideTo( $(this).index() )
+                    });
+                    $(".tabs-tit-service a").click(function(e){
+                        e.preventDefault()
+                    })
+                } else {
+                    $("#section1 .animated").css("display","none");
+                }
+
+
+                if (index == 3) {
+                    $("#section2 .animated").css("display","block");
+                    var productSwiper = new Swiper('#tabs-product', {
+                        autoHeight: true,
+                        speed:500,
+                        onSlideChangeStart: function(){
+                            $(".tabs-tit-product .active").removeClass('active')
+                            $(".tabs-tit-product a").eq(productSwiper.activeIndex).addClass('active')
+                        }
+                    });
+                    $(".tabs-tit-product a").on('touchstart mousedown',function(e){
+                        e.preventDefault()
+                        $(".tabs-tit-product .active").removeClass('active')
+                        $(this).addClass('active')
+                        productSwiper.slideTo( $(this).index() )
+                    });
+                    $(".tabs-tit-product a").click(function(e){
+                        e.preventDefault()
+                    })
+                } else {
+                    $("#section2 .animated").css("display","none");
+                }
+                if (index == 4) {
+                    $("#section3 .animated").css("display","block");
+
+                    var mySwiper = new Swiper('.swiper-zxkz', {
+                        pagination: '.swiper-pagination',
+                        paginationClickable: true,
+                        autoplay: 5000,
+                        autoplayDisableOnInteraction: false,
+                        loop: true,
+                        nextButton: '.swiper-button-next',
+                        prevButton: '.swiper-button-prev',
+                        spaceBetween: 30
+                    });
+
+                    var tabsSwiper = new Swiper('#tabs-container-zx',{
+                        speed:500,
+                        onSlideChangeStart: function(){
+                            $(".tabs-tit .active").removeClass('active')
+                            $(".tabs-tit a").eq(tabsSwiper.activeIndex).addClass('active')
+                        }
+                    });
+                    $(".tabs-tit a").on('touchstart mousedown',function(e){
+                        e.preventDefault()
+                        $(".tabs-tit .active").removeClass('active')
+                        $(this).addClass('active')
+                        tabsSwiper.slideTo( $(this).index() )
+                    });
+                    $(".tabs-tit a").click(function(e){
+                        e.preventDefault()
+                    })
+
+                } else {
+                    $("#section3 .animated").css("display","none");
+                }
+                if (index == 5) {
+                    $("#section4 .animated").css("display","block");
+                } else {
+                    $("#section4 .animated").css("display","none");
+                }
+                if (index == 6) {
+                    $("#section5 .animated").css("display","block");
+                } else {
+                    $("#section5 .animated").css("display","none");
+                }
+                if (index == 7) {
+                    $("#section6 .animated , .footer").css("display","block");
+                    var customerSwiper = new Swiper('.swiper-customer', {
+                        pagination: '.swiper-pagination',
+                        paginationClickable: true,
+                        autoplay: 5000,
+                        autoplayDisableOnInteraction: true,
+                        loop: true,
+                        spaceBetween: 30
+                    });
+                } else {
+                    $("#section6 .animated , .footer").css("display","none");
+                }
+
+            },
+            onLeave: function(index){
+                var leavingSection = $(this);
+
+                if(index == 7){
+                    $(".footer").css("display","none");
+                }
+            }
+        });
+
+
+        var num = 0;
+        function goLeft() {
+            if (num == -1200) {
+                num = 0;
+            }
+            num -= 1;
+            $(".statement-scroll").css({
+                left: num
+            })
+        }
+        var timer = setInterval(goLeft, 30);
+        $(".statement").hover(function() {
+                clearInterval(timer);
+            },
+            function() {
+                timer = setInterval(goLeft, 30);
+            })
+
+
+
+    });
+</script>
+
+
+
+
+<script type="text/javascript">
+    $.ajax({
+        type:"get",
+        url:"https://www.slowmist.com/api/get_list?type=news",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (res) {
+            const datas = res.data;
+            let html="";
+            for(let i=0;i<3;i++) {
+                const timeNum = datas[i]['date'].split("-");
+                html+="<li>" +
+                    "<a href=\""+datas[i]['url']+"\" title=\""+datas[i]['title']+"\" target=\"_blank\">" +
+                    "<img src=\""+datas[i]['img']+"\">" +
+                    "<h3>"+datas[i]['title']+"</h3>" +
+                    "<p>"+datas[i]['desc']+"</p>" +
+                    "<span class=\"time\"><em>"+timeNum[2]+"</em>"+timeNum[0]+"."+timeNum[1]+"</span>" +
+                    "</a>" +
+                    "</li>"
+            }
+            $("#news-company").html(html);
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            const data = JSON.parse(XMLHttpRequest.responseText);
+            alert(data);
+        }
+    });
+    $.ajax({
+        type:"get",
+        url:"https://www.slowmist.com/api/get_list?type=vul",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (res) {
+            const datas = res.data;
+            let html="";
+            for(let i=0;i<3;i++) {
+                const timeNum = datas[i]['date'].split("-");
+                html+="<li>" +
+                    "<a href=\""+datas[i]['url']+"\" title=\""+datas[i]['title']+"\" target=\"_blank\">" +
+                    "<img src=\""+datas[i]['img']+"\">" +
+                    "<h3>"+datas[i]['title']+"</h3>" +
+                    "<p>"+datas[i]['desc']+"</p>" +
+                    "<span class=\"time\"><em>"+timeNum[2]+"</em>"+timeNum[0]+"."+timeNum[1]+"</span>" +
+                    "</a>" +
+                    "</li>"
+            }
+            $("#news-bug").html(html);
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            const data = JSON.parse(XMLHttpRequest.responseText);
+            alert(data);
+        }
+    });
+    $.ajax({
+        type:"get",
+        url:"https://www.slowmist.com/api/get_list?type=research",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (res) {
+            const datas = res.data;
+            let html="";
+            for(let i=0;i<3;i++) {
+                const timeNum = datas[i]['date'].split("-");
+                html+="<li>" +
+                    "<a href=\""+datas[i]['url']+"\" title=\""+datas[i]['title']+"\" target=\"_blank\">" +
+                    "<img src=\""+datas[i]['img']+"\">" +
+                    "<h3>"+datas[i]['title']+"</h3>" +
+                    "<p>"+datas[i]['desc']+"</p>" +
+                    "<span class=\"time\"><em>"+timeNum[2]+"</em>"+timeNum[0]+"."+timeNum[1]+"</span>" +
+                    "</a>" +
+                    "</li>"
+            }
+            $("#news-tech").html(html);
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            const data = JSON.parse(XMLHttpRequest.responseText);
+            alert(data);
+        }
+    });
+</script>
+
+
+
+
+<script type="text/javascript" src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script type="text/javascript">
+    // 微信JS-SDK配置
+    wx.config({
+        debug: false,
+        appId: 'wx671c33c176d0283a',
+        timestamp: '1611714301',
+        nonceStr: 'KxqzsJc0',
+        signature: '12d9d3570cd27b0abe0b31d803b5e4d20dcc6a18',
+        jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage']
+    });
+    wx.ready(function () {
+        wx.onMenuShareTimeline({
+            title: '慢雾科技(SlowMist) - 专注区块链生态安全',
+            link: 'https://www.slowmist.com/',
+            imgUrl: 'https://www.slowmist.com/images/tplogo-2.png'
+        });
+        wx.onMenuShareAppMessage({
+            title: '慢雾科技(SlowMist) - 专注区块链生态安全',
+            desc: '核心能力包括：安全审计、安全顾问、防御部署、威胁情报等。',
+            link: 'https://www.slowmist.com/',
+            imgUrl: 'https://www.slowmist.com/images/tplogo-2.png',
+            type: 'link'
+        });
+    });
+</script>
+</body>
+</html>
