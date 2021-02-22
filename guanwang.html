@@ -324,6 +324,14 @@
 
         // var text = 'There are' + elements.length + 'members in the elements array';
         // var text = ['There are', elements.length, 'elements in the elements array'].join('');
+
+        // $(document).ready(function() {
+        //     //第一次进入页面刷新一次，只刷新一次
+        //     if(location.href.indexOf("#") == -1) {
+        //         location.href = location.href + "#";
+        //         location.reload();
+        //     }
+        // })
     </script>
 
     <!-- 给btn按钮绑定点击事件 -->
@@ -421,7 +429,7 @@
         $(function (limit, offset, groupIds) {
             $.ajax({
                 type: "GET",
-                url: "http://172.28.29.13/portal/article/get_article_list",
+                url: "http://172.28.29.13:8080/portal/article/get_article_list",
                 // 请求时需要的参数
                 data: {
                     limit: 10,
@@ -432,14 +440,16 @@
                 success: function (data) {
                     // console.log(data);
                     var dataList = data.data.list;
-                    // console.log(dataList)
+                    console.log(dataList)
                     var str = '';
                     // 输出的i与obj分别为下标与单个的对象
                     $.each(dataList, function (i, obj) {
                         // console.log(i);
-                        //console.log(obj.id);
+                        console.log(obj.id);
                         str += '<li class="news-artile">';
-                        str += '<a class="box-content" href="#" title="">';
+                        // 点击跳转新闻详情时传id
+                        str += '<a class="box-content" href="newsdetails.html?id=' + obj
+                            .id + '"' + ' title="">';
                         str += '<img src=' + obj.imageUrl +
                             ' alt="" >'; // src 是 obj.imageUrl
                         str += '<div class="news-write">';

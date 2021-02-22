@@ -63,7 +63,7 @@
                 </ul>
             </div>
 
-            <div class="footer-number">
+            <div class="footer-newsplate">
                 Copyright © 公司名称, Inc. All Rights Reserved.
                 <p>
                     <span>
@@ -111,7 +111,7 @@
         $(function (limit, offset, groupIds) {
             $.ajax({
                 type: "GET",
-                url: "http://172.28.29.13/portal/article/get_article_list",
+                url: "http://172.28.29.13:8080/portal/article/get_article_list",
                 // 请求时需要的参数
                 data: {
                     limit: 10,

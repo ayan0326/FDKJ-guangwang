@@ -307,6 +307,10 @@ abbr,acronym {
     text-align: center;
 }
 
+.footer-newsplate {
+    text-align: center;
+}
+
 /* 整个新闻板块页面样式 */
 #news-header {
     display: flex;
